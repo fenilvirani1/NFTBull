@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --primory-color: #7d87f9;
+  --primory-hover-color: #1827d2;
   --secondry-color: #121117;
   --text-color: #ffffff;
   --primory-font-family: "Josefin Slab", serif;
@@ -15,25 +16,43 @@ body {
   color: var(--text-color);
   padding: 5px 20px;
   margin: 0 2px;
+  font-weight: 500;
   transition: all 0.5s;
+  font-family: var(--primory-font-family);
 }
 .main-menu li a:hover,
 .main-menu li a.active {
   background-color: var(--primory-color);
   color: var(--text-color);
   border-radius: 5px;
+  font-weight: 600;
   box-shadow: 0 10px 20px -10px rgba(125, 135, 249, 1);
 }
-.main-menu-search form input {
-  padding: 6px 6px 6px 40px;
-}
-.main-menu-search form input:after {
-  position: absolute;
-  content: "f002";
-  font-size: 10px;
-  color: #fff;
+.main-menu-search a {
+  display: block;
+  width: 53px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  background: var(--primory-color);
+  border-radius: 5px;
 }
 .main-menu-search form button i {
   color: var(--primory-color);
   background-color: #7d87f9;
+}
+.main-menu-ctn a {
+  background-color: var(--primory-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -10px rgba(125, 135, 249, 1);
+  padding: 10px 30px !important;
+  font-size: 16px;
+  font-family: var(--primory-font-family);
+  font-weight: bold;
+}
+.main-menu-ctn a:hover {
+  background-color: var(--primory-hover-color);
+  color: var(--text-color);
+  box-shadow: 0 10px 20px -10px rgba(24, 39, 210, 0.8);
 }
