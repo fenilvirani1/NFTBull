@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --primory-color: #7d87f9;
+  --secondry-color: #121117;
+  --text-color: #ffffff;
+  --primory-font-family: "Josefin Slab", serif;
+  --secondry-font-family: "Poppins", sans-serif;
+}
+body {
+  background: var(--secondry-color);
+  color: var(--text-color);
+  font-family: var(--secondry-font-family);
+}
+.main-menu li a {
+  color: var(--text-color);
+  padding: 5px 20px;
+  margin: 0 2px;
+  transition: all 0.5s;
+}
+.main-menu li a:hover,
+.main-menu li a.active {
+  background-color: var(--primory-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -10px rgba(125, 135, 249, 1);
+}
+.main-menu-search form input {
+  padding: 6px 6px 6px 40px;
+}
+.main-menu-search form input:after {
+  position: absolute;
+  content: "f002";
+  font-size: 10px;
+  color: #fff;
+}
+.main-menu-search form button i {
+  color: var(--primory-color);
+  background-color: #7d87f9;
+}
