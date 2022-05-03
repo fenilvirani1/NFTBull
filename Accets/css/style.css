@@ -15,22 +15,11 @@ body {
   font-family: var(--secondry-font-family);
 }
 
-.main-menu-search a {
-  display: block;
-  width: 53px;
-  height: 43px;
-  text-align: center;
-  line-height: 43px;
-  background: var(--primory-color);
-  border-radius: 5px;
-  color: var(--primory-color);
+a {
+  text-decoration: none !important;
+}
 
-}
-.main-menu-search form button i {
-  color: var(--primory-color);
-  background-color: #7d87f9;
-}
-.main-menu-ctn a {
+.button-btn {
   background-color: var(--primory-color);
   color: var(--text-color);
   border-radius: 5px;
@@ -40,10 +29,26 @@ body {
   font-weight: bold;
   display: inline-block;
 }
-.main-menu-ctn a:hover {
+.button-btn:hover {
   background-color: var(--primory-hover-color);
   color: var(--text-color);
   box-shadow: 0 10px 20px -10px rgba(24, 39, 210, 0.8);
+}
+/* navbar */
+
+.main-menu-search a {
+  display: block;
+  width: 53px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  background: var(--primory-color);
+  border-radius: 5px;
+  color: var(--primory-color);
+}
+.main-menu-search form button i {
+  color: var(--primory-color);
+  background-color: #7d87f9;
 }
 
 #menu {
@@ -119,4 +124,109 @@ body {
 }
 div#navigation {
   z-index: 9999;
+}
+
+/* header-slider */
+#countdown ul {
+  padding: 0;
+}
+#countdown li {
+  display: inline-block;
+  font-size: 12px;
+  list-style-type: none;
+  padding: 6px;
+  text-transform: uppercase;
+  color: var(--secondry-color);
+}
+#countdown li:first-child {
+  display: none;
+}
+#countdown li span {
+  display: block;
+  font-size: 20px;
+  color: var(--primory-color);
+  font-weight: 600;
+}
+.main-slider-img {
+  padding: 100px 0;
+}
+.card.nft-card {
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 15px 30px -10px rgba(125, 135, 249, 0.5);
+  border: none;
+}
+.main-slider-img .card {
+  width: 230px;
+  margin: auto;
+}
+.card.nft-card .card-body h5.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--secondry-color);
+}
+.card.nft-card p.card-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--secondry-color);
+}
+.card.nft-card p.card-text i {
+  color: var(--primory-color);
+  padding-left: 10px;
+}
+.main-slider-cantant h1 {
+  font-size: 75px;
+  font-weight: 700;
+  color: var(--secondry-color);
+}
+.main-slider-cantant h1 span {
+  font-weight: 900;
+  color: var(--primory-color);
+}
+.main-slider-cantant p {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 20px 0;
+  color: var(--secondry-color);
+}
+.slick-dots li button:before {
+  font-size: 30px;
+}
+
+/* how it works  */
+.main-sub-title .sub-title h5 {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--primory-color);
+  position: relative;
+  display: inline-block;
+}
+.main-sub-title .sub-title h5::after,
+.main-sub-title .sub-title h5::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: var(--primory-color);
+  top: 50%;
+  right: -110px;
+}
+.main-sub-title .sub-title h5::before {
+  left: -110px;
+}
+.main-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 25px;
+}
+.card-icon .icon-bg {
+  position: relative;
+  display: inline-block;
+}
+.card-icon .icon-bg:after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  color: #7d87f9;
 }
