@@ -9,70 +9,57 @@
     <link rel="stylesheet" href="/Accets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/Accets/css/all.min.css" />
     <link rel="stylesheet" href="/Accets/css/style.css" />
+    <link rel="stylesheet" href="/Accets/css/media.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg p-0">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="/Accets/images/logo-white.png"
-            src="logo"
-            title="logo"
-            width="180px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav main-menu">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">NFT Drops</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">NFT Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Analytics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+    <nav class="navbar pe-3">
+      <div id="navigation">
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
         </div>
-        <div class="main-menu-search-ctn">
-          <ul class="navbar-nav">
-            <li class="nav-item main-menu-ctn me-4">
-              <a class="nav-link" href="#">List Drop</a>
-            </li>
-            <li class="nav-item main-menu-search">
-              <form class="d-flex">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search..."
-                  aria-label="Search"
-                />
-                <a type="submit">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </form>
-            </li>
-          </ul>
-        </div>
+        <ul class="nav" id="nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Nft Projects</a></li>
+          <li><a href="#">NFT Drops</a></li>
+          <li><a href="#">NFT Blog</a></li>
+          <li><a href="#">NFT Whales</a></li>
+          <li><a href="#">Trending Collections</a></li>
+          <li><a href="#">Rarity NFTS</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <a class="justify-content-start" href="#"
+        ><img
+          src="/Accets/images/logo-black.png"
+          src="logo"
+          title="logo"
+          width="180px"
+      /></a>
+      <div class="main-menu-search-ctn justify-content-end">
+        <ul class="d-flex">
+          <div class="main-menu-ctn me-4">
+            <a class="nav-link" href="#">List Drop</a>
+          </div>
+          <div class="nav-item main-menu-search">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <a type="submit">
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  style="color: #ffffff"
+                ></i>
+              </a>
+            </form>
+          </div>
+        </ul>
       </div>
     </nav>
 

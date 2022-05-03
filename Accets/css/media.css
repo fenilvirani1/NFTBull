@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1024px) {
+  .change {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+.main-menu-search-ctn{
+  width: 100%;
+}
+.main-menu-search-ctn ul{
+  padding-left: 15px;
+}
+.main-menu-ctn {
+    width: 30%;
+}
+.nav-item.main-menu-search {
+    width: 70%;
+}
+}
+
+@media only screen and (max-width: 580px) {
+  .change {
+    width: 100%;
+  }
+  .main-menu-ctn {
+    width: 50%;
+}
+.nav-item.main-menu-search {
+    width: 50%;
+}
+}
